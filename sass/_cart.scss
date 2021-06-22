@@ -1,0 +1,54 @@
+header{
+    background-image: url(../img/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+
+    .overlay{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: rgba($color: #fff9f9, $alpha: 0.7);
+    }
+
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px 60px 0 60px;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding-right: 10px;
+            padding-left: 10px;
+            span{
+                padding-left: 5px;
+            }
+        }
+        a{
+            text-decoration: none;
+            padding:5px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .cart a{
+                background-color: royalblue;
+                color: #fff;
+                cursor: pointer;
+                text-decoration: none;
+        }
+    }
+}
